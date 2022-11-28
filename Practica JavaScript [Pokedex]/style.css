@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: #dc3148;
+  font-family: "Courier New";
+  max-width: 1366px;
+  max-height: 768px;
+}
+
+/* INICIO*/
+.header {
+    display: flex;
+    justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.header .titulo {
+  width: 100%;
+  font-size: 70px;
+  font-weight: bolder;
+  color: black;
+}
+.header .encabezado {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  color: black;
+}
+
+.header a i {
+  width: 100%;
+  font-size: 45px;
+  text-align: center;
+  margin-right: 20px;
+  color: black;
+}
+
+.header a i:hover {
+  width: 100%;
+  font-size: 45px;
+  text-align: center;
+  color: #3761a8;
+}
+/* Responsive a partir de 600px*/
+@media only screen and (max-width: 600px) {
+  .header {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .header .titulo {
+    width: 100%;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+    color: black;
+
+  }
+
+  .header h3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+  }
+
+  .header a i {
+    justify-content: center;
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #3761a8;
+  }
+
+  .header a i:hover {
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    color: black;
+  }
+}
+
+/*<section class="podedex"> INICIO*/
+.texto{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: "Courier New";
+
+}
+.pokedex {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.contenido{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pokedex .entrada {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+}
+
+.pokedex .entrada input {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  max-width: 500px;
+  border: 3px solid #3761a8;
+  border-radius: 10px;
+  font-family: "Courier New";
+  font-size: 20px;
+}
+.pokedex .entrada p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 25px;
+  font-family: "Courier New";
+  font-weight: bolder;
+}
+
+.pokedex .entrada input:focus {
+  border: 3px solid #3761a8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px 0 white;
+  outline: 0 none;
+}
+
+.pokedex .entrada i {
+  margin-left: 5px;
+  padding: 10px;
+  background-color: #3761a8;
+  color: white;
+  border-radius: 10px;
+  font-size: 25px;
+}
+
+.pokedex .entrada i:hover {
+  background-color: lightblue;
+  box-shadow: 0 4px 6px 0 white;
+  color: #3761a8;
+}
+
+.pokedex .img-pokemon {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+
+.pokedex .img-pokemon img {
+  width: 300px;
+  margin-top: 5px;
+  
+}
+.pokedex .datospokemon {
+  display: none;
+  width: 100%;
+  max-width: 500px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  background-color: #ffded8;
+  color: #ab8fc0;
+  padding: 20px;
+  border-radius: 20px;
+  border: 3px solid black;
+}
+.pokedex .datospokemon .estadisticas h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.pokedex .datospokemon .estadisticas p {
+  color: #7f3065;
+}
+.pokedex .datospokemon .estadisticas h5 {
+  color: #7f3065;
+  font-weight: bolder;
+  padding-left: 15px;
+}
+.pokedex .datospokemon .error {
+    display: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .pokedex .img-pokemon {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pokedex .img-pokemon img {
+    width: 45%;
+  }
+  .pokedex .datospokemon {
+    width: 100%;
+    max-width: 300px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+/*<section class="podedex"> FIN*/
